@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;300;400;500;600;700;800;900&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+article {
+	@apply pb-12 pt-4 text-[1.165rem] leading-8 lg:mx-20 xl:mx-28;
+}
+
+.width {
+	@apply mx-auto w-full px-6 md:px-12 lg:max-w-6xl xl:px-0;
+}
+
+/* ===== HTML TAGS ===== */
+
+article > h1 {
+	@apply mb-2 mt-10 text-3xl font-semibold lg:text-4xl;
+}
+
+article > h2 {
+	@apply -mb-1 mt-8 text-[1.65rem] font-bold text-amber-700;
+}
+
+article > h3 {
+	@apply -mb-1 mt-6 text-[1.45rem] font-medium;
+}
+
+article > h4,
+article > h5,
+article > h6 {
+	@apply -mb-1 mt-6 text-xl font-medium;
+}
+
+article > p {
+	@apply my-4 font-body;
+}
+
+article > a,
+article > p > a,
+.link {
+	@apply font-bold text-gray-500 hover:underline;
+}
+
+article > blockquote {
+	@apply mb-4 rounded-sm border-l-2 border-gray-400 pl-2 text-gray-600;
+}
+
+article > pre {
+	@apply my-4;
+}
+
+article > pre > code {
+	@apply w-10 whitespace-normal rounded-sm bg-gray-200 p-1;
+}
+
+article > p > code {
+	@apply m-1 rounded-sm border bg-gray-100 p-2;
+}
+
+article > ul > li,
+article > ol > li {
+	@apply mx-8 my-4 list-disc text-lg;
+}
